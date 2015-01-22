@@ -1,5 +1,11 @@
 package com.develogical;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+
+
 public class QueryProcessor {
 
     public String process(String query) {
@@ -18,6 +24,7 @@ public class QueryProcessor {
             String[] result = query.split(": ");
             if(result.length >2){
                 String values[] = result[2].split(", ");
+                getMax(values);
                 return (Integer.parseInt(values[0])>Integer.parseInt(values[1])? values[0] : values[1] ) ;
             }
             return "";
@@ -30,6 +37,19 @@ public class QueryProcessor {
             return "";
         }
         return "";
+    }
+
+    public static int getMax(String[] vals){
+        int currentMax=0;
+        for(int i = 1;i<vals.length;i++){
+            if(currentMax < Integer.parseInt(vals[i])){
+                currentMax = Integer.parseInt(vals[i]);
+            }
+        }
+                        return currentMax;
+
+
+
     }
 
 }

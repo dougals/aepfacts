@@ -44,8 +44,16 @@ public class QueryProcessorTest {
         String result = new QueryProcessor().process("74b6ce90: what is 12 multiplied by 2");
         assertNotNull(result);
         assertThat(result, is("24") );
-    }    
-    
+    }
+
+    @Test
+    public void processGreaterRequestMultiples(){
+        String result = new QueryProcessor().process("7e5ceca0: which of the following numbers is the largest: 560, 70, 27, 58");
+        assertNotNull(result);
+        assertThat(result, is("560") );
+    }
+
+
 
 
 }
