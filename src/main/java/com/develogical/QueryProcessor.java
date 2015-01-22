@@ -44,8 +44,40 @@ public class QueryProcessor {
 
             }
         }
+        else if(query.contains("prime")){
+            String[] result = query.split(": ");
+            if(result.length >2){
+                String values[] = result[2].split(", ");
+                return findPrime(values);
+
+            }
+        }
         return "";
     }
+
+    public String findPrime(String[] values){
+        for(int i = 1;i<values.length;i++){
+                     if(isPrime(Long.parseLong(values[i]))){
+                         return values[i];
+
+                     }
+        }
+        return "";
+    }
+        public static boolean isPrime(long n) {
+            if (n <= 3) {
+                return n > 1;
+            } else if (n % 2 == 0 || n % 3 == 0) {
+                return false;
+            } else {
+                for (int i = 5; i * i <= n; i += 6) {
+                    if (n % i == 0 || n % (i + 2) == 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
 
     public String findSquareRoot(String[] values){
         for(int i = 1;i<values.length;i++){

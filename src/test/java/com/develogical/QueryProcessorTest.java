@@ -61,6 +61,15 @@ public class QueryProcessorTest {
     }
 
 
+    @Test
+    public void processPrime(){
+        String result = new QueryProcessor().process("484e2e30: which of the following numbers are primes: 483, 67, 277, 234");
+        assertNotNull(result);
+        assertThat(result, is("67") );
+    }
+
+
+
 
 
 }
