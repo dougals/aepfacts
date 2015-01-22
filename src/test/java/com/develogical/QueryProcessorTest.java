@@ -12,6 +12,19 @@ import static org.junit.matchers.JUnitMatchers.containsString;
 public class QueryProcessorTest {
 
     @Test
+    public void canGreetYou() {
+        String result = new QueryProcessor().process("hi");
+        assertNotNull(result);
+        assertThat(result, is("hello"));
+    }
+
+    @Test
+    public void returnsEmptyStringForUnknownQueries() {
+        String result = new QueryProcessor().process("unknown");
+        assertNotNull(result);
+        assertThat(result, is(""));
+    }
+    @Test
     public void handleWhatIsYourNameQuery(){
         String result = new QueryProcessor().process("slkjlk:what%20is%20your%20name");
         assertNotNull(result);
