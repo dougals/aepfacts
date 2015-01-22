@@ -73,6 +73,21 @@ public class QueryProcessorTest {
         assertNotNull(result);
         assertThat(result, is("113") );
     }
+    /*
+    @Test
+    public void processFibonacci(){
+        String result = new QueryProcessor().process("88b86c70: what is the 20th number in the Fibonacci sequence");
+        assertNotNull(result);
+        assertThat(result, is("113") );
+    }
+      */
+    @Test
+    public void processSubtractionRequest(){
+        String result = new QueryProcessor().process("e1a3f360: what is 5 minus 15");
+        assertNotNull(result);
+        assertThat(result, is("-10") );
+    }
+    
 
 
 

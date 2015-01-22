@@ -20,6 +20,13 @@ public class QueryProcessor {
             }
             return "";
         }
+        else if (query.contains("minus")) {
+            String[] values = query.split(" ");
+            if(values.length >4){
+                return Integer.parseInt(values[3]) - Integer.parseInt(values[5]) + "";
+            }
+            return "";
+        }
         else if (query.contains("largest")) {
             String[] result = query.split(": ");
             if(result.length >2){
