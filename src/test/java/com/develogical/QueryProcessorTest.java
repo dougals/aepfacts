@@ -27,17 +27,19 @@ public class QueryProcessorTest {
 
     @Test
     public void processAdditionRequest(){
-        String result = new QueryProcessor().process("slkjlk:what is 7 plus 9");
+        String result = new QueryProcessor().process("87500d90: what is 9 plus 11");
         assertNotNull(result);
-        assertThat(result, is("16") );
+        assertThat(result, is("20") );
     }
 
     @Test
     public void processGreaterRequest(){
-        String result = new QueryProcessor().process("api?q=986f2de0: which of the following numbers is the largest: 100, 13");
+        String result = new QueryProcessor().process("986f2de0: which of the following numbers is the largest: 100, 13");
         assertNotNull(result);
         assertThat(result, is("100") );
     }
+
+
 }
 
 

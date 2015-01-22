@@ -10,7 +10,7 @@ public class QueryProcessor {
         else if (query.contains("plus")) {
             String[] values = query.split(" ");
             if(values.length >4){
-            return Integer.parseInt(values[2]) + Integer.parseInt(values[4]) + "";
+            return Integer.parseInt(values[3]) + Integer.parseInt(values[5]) + "";
             }
             return "";
         }
