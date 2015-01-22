@@ -45,6 +45,7 @@ public class AepFactsDatabase {
 
         data.put("Hypnotoad",  miniBiog("Hypnotoad is trying out Git too!", "http://i.kinja-img.com/gawker-media/image/upload/s--rrH1qsN3--/17sl2nb9l66a4gif.gif"));
         // student 3 add biog after this comment
+        data.put("Dave", miniBiog("Dave is from Minnesota but lives in Shropshire and is studying for his MSc in Software Engineering.", "http://www.gravatar.com/avatar/44aaf796811ddba79d3d7e6fa4480e52.png"));
         // student 3 add biog above this comment
 
         // student 4 add biog after this comment
