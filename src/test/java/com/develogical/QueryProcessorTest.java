@@ -31,6 +31,14 @@ public class QueryProcessorTest {
         assertThat(result, is("MedhaDaveMike"));
     }
 
+    @Test
+    public void processMathRequest(){
+        String result = new QueryProcessor().process("slkjlk:what is 7 plus 9");
+        assertNotNull(result);
+        assertThat(result, is("16") );
+    }
+
+
 }
 
 
