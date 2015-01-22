@@ -24,6 +24,12 @@ public class QueryProcessorTest {
         assertNotNull(result);
         assertThat(result, is(""));
     }
+    @Test
+    public void handleWhatIsYourNameQuery(){
+        String result = new QueryProcessor().process("slkjlk:what%20is%20your%20name");
+        assertNotNull(result);
+        assertThat(result, is("MedhaDaveMike"));
+    }
 
 }
 
