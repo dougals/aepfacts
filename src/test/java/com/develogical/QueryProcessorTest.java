@@ -53,6 +53,13 @@ public class QueryProcessorTest {
         assertThat(result, is("560") );
     }
 
+    @Test
+    public void processSquareAndCube(){
+        String result = new QueryProcessor().process("acd405a0: which of the following numbers is both a square and a cube: 309, 4096");
+        assertNotNull(result);
+        assertThat(result, is("4096") );
+    }
+
 
 
 

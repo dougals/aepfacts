@@ -36,6 +36,25 @@ public class QueryProcessor {
             }
             return "";
         }
+        else if(query.contains("square")){
+            String[] result = query.split(": ");
+            if(result.length >2){
+                String values[] = result[2].split(", ");
+                return findSquareRoot(values);
+
+            }
+        }
+        return "";
+    }
+
+    public String findSquareRoot(String[] values){
+        for(int i = 1;i<values.length;i++){
+           int possibleSquare = Integer.parseInt(values[i]);
+            if(Math.floor(Math.sqrt(possibleSquare)) ==Math.sqrt(possibleSquare)  &&
+                    (Math.floor(Math.cbrt(possibleSquare)) ==Math.cbrt(possibleSquare)  )){
+                          return possibleSquare +"";
+            }
+        }
         return "";
     }
 
