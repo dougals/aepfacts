@@ -51,6 +51,12 @@ public class QueryProcessor {
 
             }
         }
+        else if(query.contains("Britain")){
+            return "David Cameron";
+        }
+        else if(query.contains("banana")){
+            return "yellow";
+        }
         else if(query.contains("prime")){
             String[] result = query.split(": ");
             if(result.length >2){

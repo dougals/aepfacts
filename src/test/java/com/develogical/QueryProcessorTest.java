@@ -82,10 +82,22 @@ public class QueryProcessorTest {
     }
       */
     @Test
-    public void processSubtractionRequest(){
+         public void processSubtractionRequest(){
         String result = new QueryProcessor().process("e1a3f360: what is 5 minus 15");
         assertNotNull(result);
         assertThat(result, is("-10") );
+    }
+    @Test
+    public void processMinister(){
+        String result = new QueryProcessor().process("01ff8ce0: who is the Prime Minister of Great Britain");
+        assertNotNull(result);
+        assertThat(result, is("David Cameron") );
+    }
+    @Test
+         public void processBanana(){
+        String result = new QueryProcessor().process("45d99e70: what colour is a banana");
+        assertNotNull(result);
+        assertThat(result, is("yellow") );
     }
     
 
