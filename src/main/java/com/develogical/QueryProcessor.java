@@ -56,7 +56,7 @@ public class QueryProcessor {
     }
 
     public String findPrime(String[] values){
-        for(int i = 1;i<values.length;i++){
+        for(int i = 0;i<=values.length;i++){
                      if(isPrime(Long.parseLong(values[i]))){
                          return values[i];
 
@@ -80,7 +80,7 @@ public class QueryProcessor {
         }
 
     public String findSquareRoot(String[] values){
-        for(int i = 1;i<values.length;i++){
+        for(int i = 0;i<=values.length;i++){
            int possibleSquare = Integer.parseInt(values[i]);
             if(Math.floor(Math.sqrt(possibleSquare)) ==Math.sqrt(possibleSquare)  &&
                     (Math.floor(Math.cbrt(possibleSquare)) ==Math.cbrt(possibleSquare)  )){
@@ -92,7 +92,7 @@ public class QueryProcessor {
 
     public static int getMax(String[] vals){
         int currentMax=0;
-        for(int i = 1;i<vals.length;i++){
+        for(int i = 0;i<=vals.length;i++){
             if(currentMax < Integer.parseInt(vals[i])){
                 currentMax = Integer.parseInt(vals[i]);
             }

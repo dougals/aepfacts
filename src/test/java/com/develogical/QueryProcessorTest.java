@@ -60,12 +60,18 @@ public class QueryProcessorTest {
         assertThat(result, is("4096") );
     }
 
+    @Test
+    public void processSquareAndCube2(){
+        String result = new QueryProcessor().process("acd405a0: which of the following numbers is both a square and a cube: 4096, 309");
+        assertNotNull(result);
+        assertThat(result, is("4096") );
+    }
 
     @Test
     public void processPrime(){
-        String result = new QueryProcessor().process("484e2e30: which of the following numbers are primes: 483, 67, 277, 234");
+        String result = new QueryProcessor().process("9691e710: which of the following numbers are primes: 113, 165");
         assertNotNull(result);
-        assertThat(result, is("67") );
+        assertThat(result, is("113") );
     }
 
 
