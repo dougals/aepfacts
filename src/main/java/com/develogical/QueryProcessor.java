@@ -22,6 +22,13 @@ public class QueryProcessor {
             }
             return "";
         }
+        else if (query.contains("multiplied")) {
+            String[] values = query.split(" ");
+            if(values.length >6){
+                return Integer.parseInt(values[3]) * Integer.parseInt(values[6]) + "";
+            }
+            return "";
+        }
         return "";
     }
 
