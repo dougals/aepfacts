@@ -92,7 +92,7 @@ public class QueryProcessor {
 
     public static int getMax(String[] vals){
         int currentMax=0;
-        for(int i = 0;i<=vals.length;i++){
+        for(int i = 1;i<vals.length;i++){
             if(currentMax < Integer.parseInt(vals[i])){
                 currentMax = Integer.parseInt(vals[i]);
             }
