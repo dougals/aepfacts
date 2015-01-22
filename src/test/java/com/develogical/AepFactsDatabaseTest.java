@@ -18,6 +18,13 @@ public class AepFactsDatabaseTest {
       assertThat(result.get(Key.IMAGE), containsString("photo.jpg"));
   }
 
+    @Test
+    public void containsDavid() {
+        Map<Key,String> result = new AepFactsDatabase().lookup("David");
+        assertNotNull(result);
+        assertThat(result.get(Key.TEXT), containsString("Shropshire"));
+    }
+
 }
 
 
