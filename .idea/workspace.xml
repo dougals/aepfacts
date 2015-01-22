@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba64a957-23a4-4ad8-8c8b-6b9ea3a17cd4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/develogical/AepFactsDatabase.java" afterPath="$PROJECT_DIR$/src/main/java/com/develogical/AepFactsDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/develogical/AepFactsDatabaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/develogical/AepFactsDatabaseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/develogical/QueryProcessorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/develogical/QueryProcessorTest.java" />
     </list>
     <ignored path="aepfacts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,10 +73,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AepFactsDatabaseTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AepFactsDatabaseTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/develogical/AepFactsDatabaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="32" selection-start="704" selection-end="704" vertical-scroll-proportion="0.42713568">
+            <state line="22" column="59" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AepFactsDatabase.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AepFactsDatabase.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/develogical/AepFactsDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="19" selection-start="3800" selection-end="3800" vertical-scroll-proportion="0.0">
+            <state line="32" column="19" selection-start="3800" selection-end="3800" vertical-scroll-proportion="0.025684932">
               <folding />
             </state>
           </provider>
@@ -749,16 +747,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/develogical/AepFactsDatabase.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/develogical/AepFactsDatabaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="3800" selection-end="3800" vertical-scroll-proportion="0.0">
+        <state line="22" column="59" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/develogical/AepFactsDatabaseTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/develogical/AepFactsDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="704" selection-end="704" vertical-scroll-proportion="0.42713568">
+        <state line="32" column="19" selection-start="3800" selection-end="3800" vertical-scroll-proportion="0.025684932">
           <folding />
         </state>
       </provider>
