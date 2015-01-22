@@ -11,12 +11,6 @@ import static org.junit.matchers.JUnitMatchers.containsString;
 
 public class QueryProcessorTest {
 
-    @Test
-    public void canGreetYou() {
-        String result = new QueryProcessor().process("hi");
-        assertNotNull(result);
-        assertThat(result, is("hello"));
-    }
 
     @Test
     public void returnsEmptyStringForUnknownQueries() {
@@ -26,19 +20,24 @@ public class QueryProcessorTest {
     }
     @Test
     public void handleWhatIsYourNameQuery(){
-        String result = new QueryProcessor().process("slkjlk:what%20is%20your%20name");
+        String result = new QueryProcessor().process("slkjlk:what is your name");
         assertNotNull(result);
         assertThat(result, is("MedhaDaveMike"));
     }
 
     @Test
-    public void processMathRequest(){
+    public void processAdditionRequest(){
         String result = new QueryProcessor().process("slkjlk:what is 7 plus 9");
         assertNotNull(result);
         assertThat(result, is("16") );
     }
 
-
+    @Test
+    public void processGreaterRequest(){
+        String result = new QueryProcessor().process("api?q=986f2de0: which of the following numbers is the largest: 100, 13");
+        assertNotNull(result);
+        assertThat(result, is("100") );
+    }
 }
 
 
